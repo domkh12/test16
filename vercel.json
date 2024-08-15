@@ -1,8 +1,14 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "build": {
+    "env": {
+      "CI": "false"
+    },
+    "devCommand": "vite dev",
+    "buildCommand": "vite build",
+    "outputDirectory": "dist",
+    "framework": "vite",
+    "prebuilt": false,
+    "public": "public"
+  },
+  "plugins": ["@vercel/static-build"]
 }
