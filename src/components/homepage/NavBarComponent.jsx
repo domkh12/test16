@@ -143,7 +143,7 @@ export default function NavBarComponent() {
         animate={isOpen ? "open" : "closed"}
         className={`menu flex flex-wrap items-center justify-between lg:px-20 sm:px-10 sm-max:px-5 py-4 fixed ${
           showBanner && !isScrolling ? "top-9" : "top-0"
-        } w-full drop-shadow-md font-sans dark:bg-gray-900 dark:text-gray-100 z-30 bg-white transition-all`}
+        } w-full drop-shadow-md font-sans dark:bg-gray-900 dark:text-gray-100 z-50 bg-white transition-all`}
       >
         <Link
           activeClass="active"
